@@ -1,6 +1,8 @@
 # ESwindowsMoonlightGameList
 Automatic population of the EmulationStation roms folder with startable .cmd files to launch Moonlight as well as grabbing boxarts from Moonlight for ES on Windows
 
+![Screenshot](https://github.com/MeisterLi/ESwindowsMoonlightGameList/blob/main/Screenshot.png)
+
 # Setup (on the client machine):
 
 ## Determine your Moonlight Server's UUID. 
