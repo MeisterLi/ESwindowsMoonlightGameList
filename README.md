@@ -4,8 +4,8 @@ Automatic population of the EmulationStation roms folder with startable .cmd fil
 # Setup (on the client machine):
 
 ## Determine your Moonlight Server's UUID. 
-In windows, you can find it in the registry at HKEY_CURRENT_USER\SOFTWARE\Moonlight Game Streaming Project\Moonlight\hosts\{hostnumber}
-open the included file and change the "UUID" field to the UUID you just found. Also edit the "emulationstation_location" if you have not installed it in %USERPROFILE%\.emulationstation
+In windows, you can find it in the registry at HKEY_CURRENT_USER\SOFTWARE\Moonlight Game Streaming Project\Moonlight\hosts\\{hostnumber}
+open the included file and change the "UUID" field to the UUID you just found. Also edit the "emulationstation_location" if you have not installed it in %USERPROFILE%\\.emulationstation
 
 ## Create the folder "moonlight" in your emulationstation/roms/ directory
 
