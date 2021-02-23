@@ -8,7 +8,7 @@ In windows, you can find it in the registry at HKEY_CURRENT_USER\SOFTWARE\Moonli
 open the included file and change the "UUID" field to the UUID you just found. 
 
 ## Update some Configs
-Edit the "emulationstation_location" if you don't use the regular EmulationStation install that uses%USERPROFILE%\\.emulationstation (i.E. you're using RetroBat)
+Edit the "emulationstation_location" if you don't use the regular EmulationStation install that uses %USERPROFILE%\\.emulationstation (i.E. you're using RetroBat)
 Edit the "moonlight_rom_location" if you use a different roms folder (i.E. you're using RetroBat)
 
 ## Create the folder "moonlight" in your emulationstation/roms/ directory
