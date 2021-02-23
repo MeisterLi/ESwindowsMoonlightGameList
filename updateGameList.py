@@ -1,7 +1,7 @@
 import errno, os, winreg, xml.etree.ElementTree as ET
 
 server_uuid = "176b5dd4-56f7-422e-ad14-6b31aef1343b"
-launch_command = "\"c:\\Program Files\\Moonlight Game Streaming\\Moonlight.exe\" stream " + server_uuid + "\"{0}\""
+launch_command = "\"c:\\Program Files\\Moonlight Game Streaming\\Moonlight.exe\" stream " + server_uuid + " \"{0}\""
 emulationstation_location = os.environ['USERPROFILE'] + "\\.emulationstation\\"
 moonlight_rom_location = emulationstation_location + "roms\\moonlight\\"
 moonlight_gamelist = emulationstation_location + "\\gamelists\\moonlight\\gamelist.xml"
