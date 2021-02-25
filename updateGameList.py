@@ -1,6 +1,7 @@
 import errno, os, winreg, xml.etree.ElementTree as ET
 
-uuid_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\\Moonlight Game Streaming Project\\Moonlight\\hosts\\1", 0, winreg.KEY_READ)
+host_number = '1'
+uuid_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\\Moonlight Game Streaming Project\\Moonlight\\hosts\\" + host_number, 0, winreg.KEY_READ)
 server_uuid = winreg.QueryValueEx(uuid_key, 'uuid')[0]
 launch_command = "\"c:\\Program Files\\Moonlight Game Streaming\\Moonlight.exe\" stream " + server_uuid + " \"{0}\""
 emulationstation_location = os.environ['USERPROFILE'] + "\\.emulationstation\\"
@@ -33,7 +34,7 @@ def updateMoonlightConfig(game_name, game_id):
     f.close()
     updateMoonlightImages(game_name, game_id)
 
-key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\\Moonlight Game Streaming Project\\Moonlight\\hosts\\1\\apps", 0, winreg.KEY_READ)
+key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\\Moonlight Game Streaming Project\\Moonlight\\hosts\\" + host_number + "\\apps", 0, winreg.KEY_READ)
 
 # remove all old launch files from roms folder
 filelist = [ f for f in os.listdir(moonlight_rom_location) if f.endswith(".cmd") ]
