@@ -1,6 +1,7 @@
 import errno, os, winreg, xml.etree.ElementTree as ET
 
-server_uuid = "ID HERE"
+uuid_key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\\Moonlight Game Streaming Project\\Moonlight\\hosts\\1", 0, winreg.KEY_READ)
+server_uuid = winreg.QueryValueEx(uuid_key, 'uuid')[0]
 launch_command = "\"c:\\Program Files\\Moonlight Game Streaming\\Moonlight.exe\" stream " + server_uuid + " \"{0}\""
 emulationstation_location = os.environ['USERPROFILE'] + "\\.emulationstation\\"
 moonlight_rom_location = emulationstation_location + "roms\\moonlight\\"
