@@ -11,7 +11,7 @@ open the included file and change the "UUID" field to the UUID you just found.~~
 No longer needed.  
 However if you want to use a different host than the first in the Moonlight Host list, edit the updateGame.py and change the "1" in "host_number" to a different number corresponding to the host.
 
-## Update some Configs
+## Update some Configs if not using default Emulationstation installation
 Edit the "emulationstation_location" if you don't use the regular EmulationStation install that uses %USERPROFILE%\\.emulationstation (i.E. you're using RetroBat)\
 Edit the "moonlight_rom_location" if you use a different roms folder (i.E. you're using RetroBat)
 
